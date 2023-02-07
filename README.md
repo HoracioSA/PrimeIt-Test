@@ -22,13 +22,13 @@ Browsr is a library made to query the Github REST API
 <br>
 <p align="center">
     <h4>:high_brightness: Splash screen</h4>
-  <img alt="Login" src=".github/splash.png" width="100%">
+  <img alt="Login" src=".github/splash.png" width="50%">
 </p>
 <br>
 <br>
 <p  align="center">
 <h4>:waning_crescent_moon: Home page </h4>
-  <img alt="LoginTwo" src=".github/prime_splash.png" width="100%">
+  <img alt="LoginTwo" src=".github/primeit_splash.png" width="50%">
 </p>
 </br>
 
