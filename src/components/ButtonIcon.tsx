@@ -1,17 +1,25 @@
-import { TouchableOpacity, TouchableOpacityProps } from "react-native";
-import { IconProps } from "phosphor-react-native";
-import { useTheme } from "native-base";
+import { TouchableOpacity, TouchableOpacityProps, } from "react-native";
 
-interface Props extends TouchableOpacityProps {
-    icon: React.FC<IconProps>;
+import { useTheme, IButtonProps, Button as ButtonNB } from "native-base";
+
+interface Props extends IButtonProps {
+    type?: 'PRIMARY' | 'SECONDARY'
 }
 
-export function ButtonIcon({ icon: Icon, ...rest }: Props) {
-    const { colors, sizes } = useTheme();
+export function ButtonIcon({ type, ...rest }: Props) {
+
 
     return (
-        <TouchableOpacity {...rest}>
-            <Icon color={colors.gray[300]} size={sizes[6]} />
-        </TouchableOpacity>
+        <ButtonNB
+            rounded="sm"
+            fontSize="md"
+            bg='transparent'
+            _pressed={{
+                bg: type === 'SECONDARY' ? 'transparent' : 'gray.700',
+            }}
+            {...rest}
+        >
+
+        </ButtonNB>
     );
 }

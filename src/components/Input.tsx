@@ -3,8 +3,10 @@ import React from "react"
 export function Input({ ...rest }: IInputProps) {
     return (
         <NativeBaseInput
+            w="75%"
             bg="gray.800"
             h={14}
+            mr={4}
             px={4}
             borderColor="gray.600"
             fontSize="md"
